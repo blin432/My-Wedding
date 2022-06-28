@@ -1,22 +1,24 @@
 import logo from './logo.svg';
 import './App.css';
-import Header from './Components/Header';
+import Navbar from './Components/Navbar';
+import Landing from './Components/Landing';
 import Footer from './Components/Footer';
-import About from './Components/About';
-import Resume from './Components/Resume';
-import Contact from './Components/Contact';
-import Testimonials from './Components/Testimonials';
-import Portfolio from './Components/Portfolio';
+import EventDetails from './Components/EventDetails';
+import WeddingParty from './Components/WeddingParty';
+import Rsvp from './Components/Rsvp';
+import Registry from './Components/Registry';
+import Gallery from './Components/Gallery';
 
 function App() {
   return (
     <div className="App">
-        <Header />
-        <About />
-        <Resume />
-        <Portfolio/>
-        <Testimonials />
-        <Contact />
+        <Navbar />
+        <Landing />
+        <EventDetails />
+        <WeddingParty />
+        <Gallery/>
+        <Registry />
+        <Rsvp />
         <Footer/>
     </div>
   );
