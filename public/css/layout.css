@@ -34,7 +34,7 @@ header .banner {
 
 header .banner-text { width: 100%; }
 header .banner-text h1 {
-   font: 90px/1.1em 'opensans-bold', sans-serif;
+   font: 90px/1.1em 'opensans-bold', s;
    color: #fff;
    letter-spacing: -2px;
    margin: 0 auto 18px auto;
@@ -164,12 +164,19 @@ ul#nav li.current a { color: #F06000; }
 
 #eventDetails {
    background: #2B2B2B;
-   padding-top: 96px;
-   padding-bottom: 66px;
    overflow: hidden;
    height:100vh;
-   min-height: 500px;
    width: 100%;
+   display: flex;
+   justify-content: center;
+   align-self: center;
+}
+.eventDetails-content-container{
+   display: flex;
+   justify-content: center;
+   align-self: center;
+   flex-direction: column;
+   text-align: center;
 }
 
 #eventDetails a, #eventDetails a:visited  { color: #fff; }
@@ -180,34 +187,20 @@ ul#nav li.current a { color: #F06000; }
    color: #fff;
    margin-bottom: 12px;
 }
+#eventDetails h1 {
+   font: 22px/30px 'opensans-bold', sans-serif;
+   color: #fff;
+   margin-bottom: 12px;
+}
 #eventDetails p {
    line-height: 30px;
    color: #7A7A7A;
 }
-#eventDetails .profile-pic {
-   position: relative;
-   width: 120px;
-   height: 120px;
-   border-radius: 100%;
-}
-#eventDetails .rsvp-details { width: 41.66667%; }
-#eventDetails .download {
-   width: 58.33333%;
-   padding-top: 6px;
-}
-#eventDetails .main-col { padding-right: 5%; }
-#eventDetails .download .button {
-   margin-top: 6px;
-   background: #444;
-}
-#eventDetails .download .button:hover {
-   background: #fff;
-   color: #2B2B2B;
-}
-#eventDetails .download .button i {
-   margin-right: 15px;
-   font-size: 20px;
-}
+
+
+
+
+
 
 
 /* ------------------------------------------------------------------ */
@@ -215,53 +208,51 @@ ul#nav li.current a { color: #F06000; }
 /* ------------------------------------------------------------------ */
 
 #weddingParty {
-   background: #fff;
-   padding-top: 90px;
-   padding-bottom: 72px;
+   background: #D3D3D3;
    overflow: hidden;
    height:100vh;
-   min-height: 500px;
    width: 100%;
+
+ 
 }
 
-#weddingParty a, #weddingParty a:visited  { color: #11ABB0; }
-#weddingParty a:hover, #weddingParty a:focus { color: #313131; }
+.weddingParty-content-container{
+   display: flex;
+   justify-content: center;
+   flex-direction: column;
+   text-align: center;
+}
+
+.weddingParty-wedding-party{
+   display: flex;
+   flex-direction: row;
+   justify-content: space-around;
+   margin-top:5%;
+   text-align: center;
+}
+
+.weddingParty-parents{
+   display: flex;
+   flex-direction: row;
+   justify-content: space-around;
+   margin-top:30px;
+   text-align: center;
+}
+
 
 #weddingParty h1 {
-   font: 18px/24px 'opensans-bold', sans-serif;
    text-transform: uppercase;
    letter-spacing: 1px;
-}
-#weddingParty h1 span {
-   border-bottom: 3px solid #11ABB0;
-   padding-bottom: 6px;
-}
-#weddingParty h3 {
-   font: 25px/30px 'opensans-bold', sans-serif;
+   margin-top:8%;
+   margin-bottom:5%;
 }
 
-#weddingParty .header-col { padding-top: 9px; }
-#weddingParty .main-col { padding-right: 10%; }
+#weddingParty p {
+   text-transform: uppercase;
+   letter-spacing: 1px;
+   margin-bottom:0px;
+}
 
-.education, .work {
-   margin-bottom: 48px;
-   padding-bottom: 24px;
-   border-bottom: 1px solid #E8E8E8;
-}
-#weddingParty .info {
-   font: 16px/24px 'librebaskerville-italic', serif;
-   color: #6E7881;
-   margin-bottom: 18px;
-   margin-top: 9px;
-}
-#weddingParty .info span {
-   margin-right: 5px;
-   margin-left: 5px;
-}
-#weddingParty .date {
-   font: 15px/24px 'opensans-regular', sans-serif;
-   margin-top: 6px;
-}
 
 /*----------------------------------------------*/
 /*	Skill Bars
@@ -397,12 +388,32 @@ ul#nav li.current a { color: #F06000; }
 /* ------------------------------------------------------------------ */
 
 #gallery {
-   background: #ebeeee;
-   padding-top: 90px;
-   padding-bottom: 60px;
+   background: #2B2B2B;
+   overflow: hidden;
    height:100vh;
-   min-height: 500px;
    width: 100%;
+}
+.gallery-content-container{
+   display: flex;
+   justify-content: center;
+   flex-direction: column;
+   text-align: center;
+}
+
+.gallery-top{
+   display: flex;
+   flex-direction: row;
+   justify-content: space-around;
+   margin-top:5%;
+   text-align: center;
+}
+
+.gallery-bot{
+   display: flex;
+   flex-direction: row;
+   justify-content: space-around;
+   margin-top:30px;
+   text-align: center;
 }
 #gallery h1 {
    font: 15px/24px 'opensans-semibold', sans-serif;
@@ -452,7 +463,7 @@ ul#nav li.current a { color: #F06000; }
 }
 .gallery-item .item-wrap .link-icon {
    display: block;
-   color: #fff;
+   background: #2B2B2B;
    height: 30px;
    width: 30px;
    font-size: 18px;
@@ -627,65 +638,34 @@ call-to-action .button {
 /* g. registry
 /* ------------------------------------------------------------------ */
 
+
+
+
 #registry {
-   background: #1F1F1F url(../images/registry-bg.jpg) no-repeat center center;
-   background-size: cover !important;
-	-webkit-background-size: cover !important;
-   background-attachment: fixed;
-   height:100vh;
-   min-height: 500px;
-   width: 100%;
-   position: relative;
+   background: #C5C6D0;
    overflow: hidden;
+   height:100vh;
+   width: 100%;
+   display: flex;
+   justify-content: center;
+   align-self: center;
 }
-#registry .text-container {
-   padding-top: 96px;
-   padding-bottom: 66px;
+
+.registry-content-container{
+   display: flex;
+   justify-content: center;
+   align-self: center;
+   flex-direction: column;
+   text-align: center;
 }
+
 #registry h1 {
-   font: 18px/24px 'opensans-bold', sans-serif;
    text-transform: uppercase;
    letter-spacing: 3px;
    color: #fff;
 }
-#registry h1 span { display: none; }
-#registry .header-col { padding-top: 9px; }
-#registry .header-col h1:before {
-   font-family: 'FontAwesome';
-   content: "\f10d";
-	padding-right: 10px;
-	font-size: 72px;
-   line-height: 72px;
-   text-align: left;
-   float: left;
-   color: #fff;
-}
 
-/*	Blockquotes */
-#registry blockquote {
-   margin: 0 0px 30px 0px;
-   padding-left: 0;
-   position: relative;
-   text-shadow: 0px 1px 3px rgba(0, 0, 0, 1);
-}
-#registry blockquote:before { content: none; }
-#registry blockquote p {
-   font-family: 'librebaskerville-italic', serif;
-   padding: 0;
-   font-size: 24px;
-   line-height: 48px;
-   color: #fff
-}
-#registry blockquote cite {
-   display: block;
-   font-size: 12px;
-   font-style: normal;
-   line-height: 18px;
-   color: #fff;
-}
-#registry blockquote cite:before { content: "\2014 \0020"; }
-#registry blockquote cite a,
-#registry blockquote cite a:visited { color: #8B9798; border: none }
+
 
 /* Flex Slider
 /* ------------------------------------------------------------------ */
