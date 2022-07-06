@@ -95,6 +95,31 @@ header .scrolldown a {
 }
 header .scrolldown a:hover { color: #11ABB0; }
 
+.site-password-modal-container {
+   background-color: #0d0d0d59;
+   height:100%;
+   width: 100%;
+   position: fixed;
+  top: 0;
+  bottom: 0;
+  left: 0;
+  right: 0;
+
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+.site-password-modal {
+   width: 30vw;
+   height: auto;
+   background-color: #fff;
+   padding: 2rem;
+   border-radius: 20px;
+
+   background-color: rgba(255, 255, 255, 0.35);
+   backdrop-filter: blur(5px);
+   box-shadow: 0 0 1rem 0 rgba(0, 0, 0, 0.2);
+}
 /* primary navigation
 --------------------------------------------------------------------- */
 #nav-wrap ul, #nav-wrap li, #nav-wrap a {
@@ -157,7 +182,24 @@ ul#nav li a {
 ul#nav li a:active { background-color: transparent !important; }
 ul#nav li.current a { color: #F06000; }
 
+.rsvp-button{
+   cursor:pointer;
+}
 
+.guest-rsvp{
+   display:flex;
+   flex-direction: row;
+   align-items: center;
+}
+.guest-rsvp p{
+   width: 25%;
+   padding:0px;
+   margin:0px;
+}
+.guest-rsvp select{
+  padding:2px;
+  min-width:100px;
+}
 /* ------------------------------------------------------------------ */
 /* c. eventDetails Section
 /* ------------------------------------------------------------------ */
