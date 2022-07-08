@@ -96,7 +96,7 @@ header .scrolldown a {
 header .scrolldown a:hover { color: #11ABB0; }
 
 .site-password-modal-container {
-   background-color: #0d0d0d59;
+   background-color: #0d0d0da2;
    height:100%;
    width: 100%;
    position: fixed;
@@ -686,7 +686,7 @@ call-to-action .button {
 #registry {
    background: #C5C6D0;
    overflow: hidden;
-   height:100vh;
+   height:85vh;
    width: 100%;
    display: flex;
    justify-content: center;
@@ -945,6 +945,9 @@ footer {
    font-size: 14px;
    text-align: center;
    position: relative;
+   height:15vh;
+   width: 100%;
+   
 }
 
 footer a, footer a:visited { color: #525252; }
@@ -988,6 +991,7 @@ footer .social-links li {
     color: #F06000;
 }
 
+
 footer .social-links li:first-child { margin-left: 0; }
 
 /* Go To Top Button */
@@ -1003,7 +1007,8 @@ footer .social-links li:first-child { margin-left: 0; }
 	display: block;
 	width: 60px;
 	height: 60px;
-	background-color: #525252;
+	/* background-color: #525252; */
+   background:url("../images/A.png") no-repeat top center;
 
 	-webkit-transition: all 0.2s ease-in-out;
    -moz-transition: all 0.2s ease-in-out;

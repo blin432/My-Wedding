@@ -19,6 +19,7 @@ function App() {
   const [show, setShow] = useState(true);
  
   const handleClose = () => setShow(false);
+
   return (
     <div className="App">
         <Navbar />
@@ -28,28 +29,28 @@ function App() {
         <Gallery/>
         <Registry />
         <Footer/>
-        {/* <div className="password-cover" show={show} onHide={handleClose}>
-          123123123
-          <div variant="primary" onClick={handleClose}>
-              Save Changes
-          </div>
-        </div> */}
-        <div className="site-password-modal-container"  data-backdrop="static" show={show} onHide={handleClose}>
-          <div className ="site-password-modal">
-                  <Form> 
-                  <Form.Group
-                    className="mb-3"
-                    controlId="exampleForm.ControlTextarea1"
-                  >
-                    <Form.Label>Example textarea</Form.Label>
-                    <Form.Control as="textarea" rows={3} />
-                  </Form.Group>
-                </Form>
-                <Button variant="primary" onClick={handleClose}>
-                  Save Changes
-                </Button>  
-          </div>
-        </div>
+        <Modal  show={show} onHide={handleClose}  backdrop="static"
+        keyboard={false}>
+         <Modal.Header>
+           <Modal.Title>Please Enter Password</Modal.Title>
+         </Modal.Header>
+         <Modal.Body>
+           <Form>
+             <Form.Group
+               className="mb-3"
+               controlId="exampleForm.ControlTextarea1"
+             >
+               <Form.Label>Contact Ben if you don't know password!</Form.Label>
+               <Form.Control as="textarea" rows={3} />
+             </Form.Group>
+           </Form>
+         </Modal.Body>
+         <Modal.Footer>
+           <Button variant="primary" onClick={handleClose}>
+             Save Changes
+           </Button>
+         </Modal.Footer>
+       </Modal>
     </div>
   );
 }
