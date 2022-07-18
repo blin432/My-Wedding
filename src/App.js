@@ -15,10 +15,30 @@ import { Modal } from "react-bootstrap";
 
 import { Form } from "react-bootstrap";
 import SitePasswordModal from './Components/SitePasswordModal';
+import axios from 'axios';
+
 function App() {
+
   const [show, setShow] = useState(true);
+
+  const [password, setPasswordInput] = useState("");
  
-  const handleClose = () => setShow(false);
+  const handleClose = (e) =>{
+    console.log('testing',password);
+    e.preventDefault();
+    setShow(false) 
+    axios.post('http://localhost:8080/login', password, {
+      headers: {
+             // remove headers
+           }
+         }).then(res => {
+           console.log(res);
+         }).catch(err => {
+           console.log(err.response);
+         }); 
+  };
+   
+  const textChangeHandler = (e) => setPasswordInput(e.target.value);
 
   return (
     <div className="App">
@@ -41,7 +61,7 @@ function App() {
                controlId="exampleForm.ControlTextarea1"
              >
                <Form.Label>Contact Ben if you don't know password!</Form.Label>
-               <Form.Control as="textarea" rows={3} />
+               <Form.Control value = {password} as="textarea" rows={3} onChange={textChangeHandler}/>
              </Form.Group>
            </Form>
          </Modal.Body>
