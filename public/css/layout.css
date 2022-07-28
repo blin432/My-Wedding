@@ -9,7 +9,7 @@ header {
    height:100vh;
    min-height: 500px;
    width: 100%;
-   background: #161415 url(../images/landing-pic.JPG) no-repeat top center;
+   background: #161415 url(../images/landing-pic.JPG) no-repeat center;
    background-size: cover !important;
 	-webkit-background-size: cover !important;
    text-align: center;
@@ -94,6 +94,25 @@ header .scrolldown a {
    transition: all .3s ease-in-out;
 }
 header .scrolldown a:hover { color: #11ABB0; }
+
+@media only screen and (max-width: 480px) {
+
+   header {
+      position: relative;
+      height:100vh;
+
+      width: 100%;
+      background: #161415 url(../images/landing-pic.JPG) no-repeat center;
+      background-size: cover !important;
+      -webkit-background-size: cover !important;
+      text-align: center;
+      overflow: hidden;
+      background-position: 44% 50%; 
+   }
+   
+   
+}
+
 
 .site-password-modal-container {
    background-color: #0d0d0da2;
@@ -182,6 +201,32 @@ ul#nav li a {
 ul#nav li a:active { background-color: transparent !important; }
 ul#nav li.current a { color: #F06000; }
 
+@media only screen and (max-width: 480px) {
+
+   ul#nav li {
+      position: relative;
+      list-style: none;
+      height: 48px;
+      display: inline-block;
+   }
+   #nav-wrap {
+      font: 12px 'opensans-bold', sans-serif;
+      width: 100%;
+      text-transform: uppercase;
+      letter-spacing: 2.5px;
+      margin: 0 auto;
+      z-index: 100;
+      position: fixed;
+      left: 0;
+      top: 0;
+   }
+   html,body{
+      overflow-x: hidden;
+      scroll-behavior: smooth;
+  }
+   
+}
+
 .rsvp-button{
    cursor:pointer;
 }
@@ -240,7 +285,17 @@ ul#nav li.current a { color: #F06000; }
 }
 
 
+@media only screen and (max-width: 480px) {
 
+   .eventDetails-content-container{
+      display: flex;
+      flex-direction: column;
+      align-self: start;
+      margin-top:30px;
+   }
+   
+   
+}
 
 
 
@@ -295,6 +350,31 @@ ul#nav li.current a { color: #F06000; }
    margin-bottom:0px;
 }
 
+@media only screen and (max-width: 480px) {
+
+   .weddingParty-wedding-party{
+      display: flex;
+      flex-direction: column;
+      justify-content: space-around;
+      margin-top:5%;
+      text-align: center;
+   }
+   .weddingParty-wedding-party div{
+      padding-top:100px;
+   }
+   
+   .weddingParty-parents div{
+      padding-top:80px;
+   }
+   .weddingParty-parents{
+      display: flex;
+      flex-direction: column;
+      justify-content: space-around;
+      margin-top:30px;
+      text-align: center;
+   }
+   
+}
 
 /*----------------------------------------------*/
 /*	Skill Bars
@@ -431,7 +511,7 @@ ul#nav li.current a { color: #F06000; }
 
 #gallery {
    background: #2B2B2B;
-   overflow: hidden;
+   overflow: visible;
    height:100vh;
    width: 100%;
 }
@@ -457,6 +537,9 @@ ul#nav li.current a { color: #F06000; }
    margin-top:30px;
    text-align: center;
 }
+
+
+
 #gallery h1 {
    font: 15px/24px 'opensans-semibold', sans-serif;
    text-transform: uppercase;
@@ -551,6 +634,45 @@ ul#nav li.current a { color: #F06000; }
    opacity: 1;
 	-moz-opacity: 1;
 	filter:alpha(opacity=100);
+}
+
+@media only screen and (max-width: 480px) {
+
+   .gallery-top{
+      display: flex;
+      flex-direction: column;
+      justify-content: space-around;
+      margin-top:5%;
+      text-align: center;
+   }
+   .gallery-top div{
+      padding-top:20px;
+   }
+   .gallery-bot div{
+      padding-top:20px;
+   }
+
+   .gallery-bot{
+      display: flex;
+      flex-direction: column;
+      justify-content: space-around;
+      margin-top:30px;
+      text-align: center;
+   }
+   .gallery-content-container img{
+    height:150px;
+    width:250px;
+   } 
+
+   #gallery h1 {
+      font: 15px/24px 'opensans-semibold', sans-serif;
+      text-transform: uppercase;
+      letter-spacing: 1px;
+      text-align: center;
+      margin-bottom: 0px;
+      color: #95A3A3;
+      margin-top:30px;
+   }
 }
 
 /* popup modal */

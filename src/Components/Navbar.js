@@ -1,17 +1,37 @@
-import React, { Component } from 'react';
+import React, { Component } from 'react';   
 import Example from './Example';
 import { useState } from "react";
 import { Button } from "react-bootstrap";
 import { Modal } from "react-bootstrap";
+import axios from 'axios';
 
 import { Form } from "react-bootstrap";
 
 function Navbar() {
    const [show, setShow] = useState(false);
- 
-   const handleClose = () => setShow(false);
+
    const handleShow = () => setShow(true);
- 
+
+
+   const [guest1, setGuest1] = useState("");
+   const [guest2, setGuest2] = useState("");
+  
+   const handleClose = (e) =>{
+     console.log('testing',guest1);
+     e.preventDefault();
+     setShow(false) 
+     axios.post('http://localhost:8080/login', {guest1, guest2}, {
+       headers: {
+              // remove headers
+            }
+          }).then(res => {
+            console.log(res);
+          }).catch(err => {
+            console.log(err.response);
+          }); 
+   };
+   const handleGuest1Change = (e) => setGuest1(e.target.value);
+   const handleGuest2Change = (e) => setGuest2(e.target.value);
    return (
       <div>
          <nav id="nav-wrap">
@@ -38,14 +58,14 @@ function Navbar() {
                <div >
                   <div className="guest-rsvp">
                      <p>Guest 1</p>
-                     <select name="guest1" id="guest1">
+                     <select   onChange={handleGuest1Change} name="guest1" id="guest1">
                         <option value="Yes">YES!</option>
                         <option value="No">NO</option>
                      </select>
                   </div>
                   <div className="guest-rsvp">  
                      <p>Guest 2</p>
-                     <select name="guest2" id="guest2">
+                     <select onChange={handleGuest2Change} name="guest2" id="guest2">
                         <option value="Yes">YES!</option>
                         <option value="No">NO</option>
                      </select>                    
