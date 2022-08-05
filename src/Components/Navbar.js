@@ -49,7 +49,7 @@ function Navbar() {
 
          </nav>
 
-         <Modal  show={show} onHide={handleClose}>
+         <Modal  className="my-modal" show={show} onHide={handleClose}>
             <Modal.Header closeButton>
                <Modal.Title>Hello Guest</Modal.Title>
              </Modal.Header>

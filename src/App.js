@@ -49,7 +49,7 @@ function App() {
         <Gallery/>
         <Registry />
         <Footer/>
-        <Modal  show={show} onHide={handleClose}  backdrop="static"
+        <Modal  show={show} onHide={handleClose}  backdrop="static" className="my-modal"
         keyboard={false}>
          <Modal.Header>
            <Modal.Title>Please Enter Password</Modal.Title>

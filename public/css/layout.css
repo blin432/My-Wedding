@@ -6,6 +6,7 @@ body { background: #0f0f0f; }
 html,body{
    overflow-x: hidden;
    scroll-behavior: smooth;
+   overscroll-behavior-y: none;
 }
 
 header {
@@ -231,11 +232,18 @@ ul#nav li.current a { color: #F06000; }
    
 }
 
+.my-modal .modal-content {
+   background-color: rgb(253, 253, 253);
+   opacity: 1.0;
+   border-radius: 20px;
+ }
+
 .rsvp-button{
    cursor:pointer;
 }
 
 .guest-rsvp{
+   margin-bottom: 20px;
    display:flex;
    flex-direction: row;
    align-items: center;
@@ -282,6 +290,7 @@ ul#nav li.current a { color: #F06000; }
    font: 22px/30px 'opensans-bold', sans-serif;
    color: #fff;
    margin-bottom: 12px;
+   margin-top:27%;
 }
 #eventDetails p {
    line-height: 30px;
@@ -344,7 +353,7 @@ ul#nav li.current a { color: #F06000; }
 #weddingParty h1 {
    text-transform: uppercase;
    letter-spacing: 1px;
-   margin-top:8%;
+   margin-top:27%;
    margin-bottom:5%;
 }
 
@@ -549,7 +558,7 @@ ul#nav li.current a { color: #F06000; }
    text-transform: uppercase;
    letter-spacing: 1px;
    text-align: center;
-   margin-top: 30px;
+   margin-top:27%;
    color: #95A3A3;
 }
 
@@ -675,7 +684,6 @@ ul#nav li.current a { color: #F06000; }
       text-align: center;
       margin-bottom: 0px;
       color: #95A3A3;
-      margin-top:30px;
    }
 }
 
