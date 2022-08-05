@@ -3,6 +3,10 @@ body { background: #0f0f0f; }
 /* ------------------------------------------------------------------ */
 /* b. Header Styles
 /* ------------------------------------------------------------------ */
+html,body{
+   overflow-x: hidden;
+   scroll-behavior: smooth;
+}
 
 header {
    position: relative;
@@ -545,7 +549,7 @@ ul#nav li.current a { color: #F06000; }
    text-transform: uppercase;
    letter-spacing: 1px;
    text-align: center;
-   margin-bottom: 48px;
+   margin-top: 30px;
    color: #95A3A3;
 }
 
