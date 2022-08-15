@@ -22,19 +22,25 @@ function App() {
   const [show, setShow] = useState(true);
 
   const [password, setPasswordInput] = useState("");
+  const [guestData, setguestData] = useState("");
  
   const handleClose = (e) =>{
-    console.log('testing',password);
     e.preventDefault();
-    setShow(false) 
-    axios.post('http://localhost:8080/login', password, {
+    
+    axios.get(`https://my-wedding-api-postgres.herokuapp.com/login/${password}`, password, {
       headers: {
-             // remove headers
+           "Content-Type": "application/json",
+           "Access-Control-Allow-Origin": "*",
+           'Access-Control-Allow-Credentials': 'true'
            }
          }).then(res => {
-           console.log(res);
+          if (res.data.length > 0){
+            setguestData(res.data[0]);
+            setShow(false) ;
+          }
+           console.log('data',res.data);
          }).catch(err => {
-           console.log(err.response);
+           console.log(err);
          }); 
   };
    
@@ -42,7 +48,7 @@ function App() {
 
   return (
     <div className="App">
-        <Navbar />
+        <Navbar  guestData = {guestData} />
         <Landing />
         <EventDetails />
         <WeddingParty />
