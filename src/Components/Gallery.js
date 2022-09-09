@@ -7,11 +7,20 @@ function Gallery() {
           <h1>Gallery</h1>
           <div className = "gallery-top">
             <div>
-            <img src="https://www.brides.com/thmb/psWP0UmDNSEyVRFQp97Gm8nr-m8=/1067x800/smart/filters:no_upscale()/sq-740658be0504413a8a77d501ba133df6.jpg" alt="Girl in a jacket" width="500" height="600"/>
+            <img src="../images/ny.JPEG" alt="Girl in a jacket" width="500" height="600"/>
             </div>
             <div>
-            <img src="https://www.brides.com/thmb/psWP0UmDNSEyVRFQp97Gm8nr-m8=/1067x800/smart/filters:no_upscale()/sq-740658be0504413a8a77d501ba133df6.jpg" alt="Girl in a jacket" width="500" height="600"/>
+            <img src="../images/hagrid.JPG" alt="Girl in a jacket" width="500" height="600"/>
             </div>   
+            <div>
+            <img src="../images/charleston.jpeg" alt="Girl in a jacket" width="500" height="600"/>
+            </div>  
+            {/* <div>
+            <img src="../images/stone-mountain.jpeg" alt="Girl in a jacket" width="500" height="700"/>
+            </div>  
+            <div>
+            <img src="../images/trees.JPEG" alt="Girl in a jacket" width="500" height="700"/>
+            </div>   */}
           </div>
           {/* <div className = "gallery-bot">
             <div>
