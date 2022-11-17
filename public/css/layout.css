@@ -11,16 +11,21 @@ html,body{
 
 header {
    position: relative;
-   background-attachment: fixed !important;
+   /* background-position: 60% 50%; */
    height:100vh;
    min-height: 500px;
    width: 100%;
-   background: #161415 url(../images/main.jpg) no-repeat center;
-   background-size: cover !important;
-	-webkit-background-size: cover !important;
+   /* background: #161415 url(../images/main.jpg) no-repeat center; */
+   /* background-size: cover !important;
+	-webkit-background-size: cover !important; */
    text-align: center;
    overflow: hidden;
    background-attachment: scroll;
+   background-image: url(../images/main.jpg);
+   background-size:cover;
+   background-repeat: no-repeat;
+   background-position: center;
+   background-attachment: fixed;
 }
 
 /* vertically center banner section */
@@ -109,12 +114,18 @@ header .scrolldown a:hover { color: #11ABB0; }
       height:100vh;
 
       width: 100%;
-      background: #161415 url(../images/main.jpg) no-repeat center;
-      background-size: cover !important;
-      -webkit-background-size: cover !important;
+
+      /* background-size: cover !important;
+      -webkit-background-size: cover !important; */
       text-align: center;
       overflow: hidden;
       background-position: 44% 50%; 
+      background-image: url(../images/main.jpg);
+      background-size:cover;
+      background-repeat: no-repeat;
+      background-position: 44% 50%; 
+      background-attachment: scroll;
+      background-attachment: fixed;
    }
    
    
