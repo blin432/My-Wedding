@@ -14,7 +14,7 @@ header {
    height:100vh;
    min-height: 500px;
    width: 100%;
-   background: #161415 url(../images/landing-pic.JPG) no-repeat center;
+   background: #161415 url(../images/main.jpg) no-repeat center;
    background-size: cover !important;
 	-webkit-background-size: cover !important;
    text-align: center;
@@ -107,7 +107,7 @@ header .scrolldown a:hover { color: #11ABB0; }
       height:100vh;
 
       width: 100%;
-      background: #161415 url(../images/landing-pic.JPG) no-repeat center;
+      background: #161415 url(../images/main.jpg) no-repeat center;
       background-size: cover !important;
       -webkit-background-size: cover !important;
       text-align: center;
@@ -282,6 +282,7 @@ ul#nav li.current a { color: #F06000; }
    align-self: center;
    flex-direction: column;
    text-align: center;
+   height:100vh
 }
 
 #eventDetails a, #eventDetails a:visited  { color: #fff; }
@@ -295,12 +296,17 @@ ul#nav li.current a { color: #F06000; }
 #eventDetails h1 {
    font: 22px/30px 'opensans-bold', sans-serif;
    color: #fff;
-   margin-bottom: 12px;
-   margin-top:27%;
+   margin-bottom: 8px;
+   /* margin-top:27%; */
 }
 #eventDetails p {
-   line-height: 30px;
    color: #7A7A7A;
+   color: #fff;
+}
+#eventDetails h3 {
+   font:  'opensans-bold', sans-serif;
+   color: #fff;
+   margin-bottom: 8px;
 }
 
 
@@ -310,10 +316,18 @@ ul#nav li.current a { color: #F06000; }
       display: flex;
       flex-direction: column;
       align-self: start;
-      margin-top:30px;
    }
-   
-   
+
+   #eventDetails h1 {
+      font:  'opensans-bold', sans-serif;
+      color: #fff;
+      margin-bottom: 8px;
+   }
+   #eventDetails h3 {
+      font:  'opensans-bold', sans-serif;
+      color: #fff;
+      margin-bottom: 8px;
+   }
 }
 
 
@@ -359,7 +373,7 @@ ul#nav li.current a { color: #F06000; }
 #weddingParty h1 {
    text-transform: uppercase;
    letter-spacing: 1px;
-   margin-top:27%;
+   margin-top:7%;
    margin-bottom:5%;
 }
 
@@ -371,6 +385,14 @@ ul#nav li.current a { color: #F06000; }
 
 @media only screen and (max-width: 480px) {
 
+   #weddingParty h1 {
+      text-transform: uppercase;
+      letter-spacing: 1px;
+      margin-top:55px;
+      margin-bottom:0px;
+   }
+   
+
    .weddingParty-wedding-party{
       display: flex;
       flex-direction: column;
@@ -379,18 +401,19 @@ ul#nav li.current a { color: #F06000; }
       text-align: center;
    }
    .weddingParty-wedding-party div{
-      padding-top:100px;
+      margin-top:45px;
    }
    
    .weddingParty-parents div{
-      padding-top:80px;
+      margin-top:45px;
    }
    .weddingParty-parents{
       display: flex;
       flex-direction: column;
       justify-content: space-around;
-      margin-top:30px;
+      /* margin-top:30px; */
       text-align: center;
+      margin-top:0px;
    }
    
 }
@@ -531,8 +554,8 @@ ul#nav li.current a { color: #F06000; }
 #gallery {
    background: #2B2B2B;
    overflow: visible;
-   height:100vh;
    width: 100%;
+   height:100vh;
 }
 .gallery-content-container{
    display: flex;
@@ -564,7 +587,7 @@ ul#nav li.current a { color: #F06000; }
    text-transform: uppercase;
    letter-spacing: 1px;
    text-align: center;
-   margin-top:27%;
+   margin-top:7%;
    color: #95A3A3;
 }
 
@@ -657,6 +680,13 @@ ul#nav li.current a { color: #F06000; }
 
 @media only screen and (max-width: 480px) {
 
+   #gallery {
+      background: #2B2B2B;
+      overflow: visible;
+      width: 100%;
+      height:200vh
+   }
+
    .gallery-top{
       display: flex;
       flex-direction: column;
@@ -679,8 +709,7 @@ ul#nav li.current a { color: #F06000; }
       text-align: center;
    }
    .gallery-content-container img{
-    height:150px;
-    width:250px;
+    width:350px;
    } 
 
    #gallery h1 {
@@ -689,6 +718,7 @@ ul#nav li.current a { color: #F06000; }
       letter-spacing: 1px;
       text-align: center;
       margin-bottom: 0px;
+      margin-top: 55px;
       color: #95A3A3;
    }
 }
@@ -822,7 +852,6 @@ call-to-action .button {
 
 
 
-
 #registry {
    background: #C5C6D0;
    overflow: hidden;
@@ -845,6 +874,25 @@ call-to-action .button {
    text-transform: uppercase;
    letter-spacing: 3px;
    color: #fff;
+}
+
+@media only screen and (max-width: 480px) {
+   .registry-content-container{
+      display: flex;
+      justify-content: center;
+      align-self: center;
+      flex-direction: column;
+      text-align: center;
+      margin-bottom:175px
+   }
+   #registry h1 {
+      font: 32px/24px 'opensans-semibold', sans-serif;
+      text-transform: uppercase;
+      letter-spacing: 3px;
+      color: #fff;
+      margin-bottom:5px;
+   }
+
 }
 
 

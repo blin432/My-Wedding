@@ -7,17 +7,18 @@ function EventDetails() {
       <section id="eventDetails">
 
             <div className="eventDetails-content-container column">
-               <h1>Event Details</h1>
-               <h2>Alice and Ben's ceremony</h2>
-               <p>Time TBD</p>
-               <p>Location TBD</p>
-               <p>Location TBD</p>
-               <p>Time TBD</p>
+               <h1>Wedding Ceremony</h1>
+               <h3>The Piedmont Room</h3>
+               <p>500 10th St NE</p>
+               <p>Atlanta, GA 30309</p>
+               <p>5:00 pm to 6:00pm</p>
+               <h3>Reception to Follow</h3>
+               <p>6:00 pm to 11:00pm</p>
                <h1>Hotel Accomadations</h1>
-               <h2>Hilton Atlaanta</h2>
-               <p>Time TBD</p>
-               <p>Hilton Atlaanta</p>
-               <p>Hotel Accomadations</p>
+               <h3>The Starling Midtown</h3>
+               <p> 188 14th St NE</p>
+               <p>Atlanta, GA 30361</p>
+
             </div>
 
       </section>

@@ -14,7 +14,13 @@ function Gallery() {
             </div>   
             <div>
             <img src="../images/charleston.jpeg" alt="Girl in a jacket" width="500" height="600"/>
-            </div>  
+            </div>
+            <div>
+            <img src="../images/engage2.jpg" alt="Girl in a jacket" width="500" height="600"/>
+            </div>   
+            <div>
+            <img src="../images/engage.jpg" alt="Girl in a jacket" width="500" height="600"/>
+            </div>      
             {/* <div>
             <img src="../images/stone-mountain.jpeg" alt="Girl in a jacket" width="500" height="700"/>
             </div>  
