@@ -11,6 +11,7 @@ html,body{
 
 header {
    position: relative;
+   background-attachment: fixed !important;
    height:100vh;
    min-height: 500px;
    width: 100%;
@@ -19,6 +20,7 @@ header {
 	-webkit-background-size: cover !important;
    text-align: center;
    overflow: hidden;
+   background-attachment: scroll;
 }
 
 /* vertically center banner section */
